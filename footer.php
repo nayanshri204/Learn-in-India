@@ -1,0 +1,11 @@
+</main>
+<footer class="site-footer">
+    <div class="container">
+        <p>&copy; 2025 Learn in India — All rights reserved.</p>
+    </div>
+</footer>
+<script>
+// small helper to progressively enhance forms if needed
+</script>
+</body>
+</html>

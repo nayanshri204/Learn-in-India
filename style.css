@@ -1,0 +1,56 @@
+/* Basic layout and components for Learn in India */
+
+:root{--bg:#f5f7fa;--card:#fff;--accent:#0078d4;--muted:#6b7280}
+*{box-sizing:border-box}
+body{
+    margin:0;font-family:Inter,Segoe UI,Arial,Helvetica,sans-serif;
+    background:var(--bg);
+    color:#111
+}
+.container{
+    max-width:980px;
+    margin:24px auto;
+    padding:0 16px
+}
+.header-inner{
+    display:flex;
+    align-items:center;
+    gap:18px
+}
+.site-header{
+    background:#fff;
+    border-bottom:1px solid #e6e9ee
+}
+.brand{
+    font-weight:700;color:var(--accent);
+    text-decoration:none;
+    font-size:1.15rem
+}
+.nav{display:flex;gap:12px;margin-left:12px}
+.nav a{color:#25303b;text-decoration:none;padding:10px 6px;border-radius:4px}
+.nav a:hover{background:#f0f4f8}
+.nav-search{margin-left:auto;display:flex;gap:8px}
+.nav-search input{padding:8px;border:1px solid #d1d9e0;border-radius:4px}
+.nav-search button{
+    padding:8px 10px;
+    background:var(--accent);
+    color:#fff;
+    border:none;border-radius:4px
+}
+.card{background:var(--card);padding:20px;border-radius:8px;box-shadow:0 6px 18px rgba(20,30,40,0.04)}
+.site-footer{margin-top:28px;padding:18px 0;background:transparent;color:var(--muted);text-align:center}
+.errors{background:#fff2f2;border:1px solid #ffd2d2;padding:10px;border-radius:6px}
+form{margin-top:12px}
+label{display:block;margin-top:12px;font-weight:600}
+input[type=text],input[type=email],input[type=date],select{
+    width:100%;
+    padding:10px;
+    margin-top:6px;
+    border:1px solid #e0e6ea;border-radius:6px
+}
+button[type=submit],button{background:var(--accent);color:#fff;padding:10px 14px;border-radius:6px;border:none}
+@media (max-width:720px){
+    .header-inner{flex-wrap:wrap}.nav{order:3;
+        width:100%;
+        justify-content:space-around}.nav-search{order:2;width:100%;margin-top:8px}
+    }

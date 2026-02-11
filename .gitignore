@@ -1,0 +1,12 @@
+# E-Commerce Hub Root .gitignore
+
+node_modules/
+data/
+.env
+.env.local
+*.log
+.DS_Store
+.vscode/
+.idea/
+build/
+dist/
