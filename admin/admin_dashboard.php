@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 // Check admin authentication
 if (empty($_SESSION['admin_id'])) {
@@ -20,13 +20,21 @@ $certificates_dir = $upload_dir . 'certificates/';
 
 // Create upload directories if they don't exist
 
-$upload_dir = __DIR__ . '/../uploads';
-$profile_images_dir = $upload_dir . '/profile_images';
-$certificates_dir = $upload_dir . '/certificates';
+$upload_dir = realpath(__DIR__ . '/../') . DIRECTORY_SEPARATOR . 'uploads';
+$profile_images_dir = $upload_dir . DIRECTORY_SEPARATOR . 'profile_images';
+$certificates_dir = $upload_dir . DIRECTORY_SEPARATOR . 'certificates';
 
-if (!is_dir($upload_dir)) mkdir($upload_dir, 0755, true);
-if (!is_dir($profile_images_dir)) mkdir($profile_images_dir, 0755, true);
-if (!is_dir($certificates_dir)) mkdir($certificates_dir, 0755, true);
+if (!file_exists($upload_dir)) {
+    @mkdir($upload_dir, 0777, true);
+}
+
+if (!file_exists($profile_images_dir)) {
+    @mkdir($profile_images_dir, 0777, true);
+}
+
+if (!file_exists($certificates_dir)) {
+    @mkdir($certificates_dir, 0777, true);
+}
 
 $errors = [];
 $success = [];
@@ -523,5 +531,5 @@ document.querySelectorAll('a[href^="#upload-"]').forEach(function(link) {
 });
 </script>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>
 

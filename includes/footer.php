@@ -1,7 +1,7 @@
 </main>
 <footer class="site-footer">
     <div class="container">
-        <p>&copy; 2025 Learn in India — All rights reserved.</p>
+        <p>&copy; 2026 Learn in India — All rights reserved.</p>
     </div>
 </footer>
 <script>

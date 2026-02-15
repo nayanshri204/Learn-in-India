@@ -1,6 +1,5 @@
 <?php
-require 'header.php';
-
+require __DIR__ . '/../includes/header.php';
 // Check admin authentication
 if (empty($_SESSION['admin_id'])) {
     header('Location: admin_login.php');
@@ -525,4 +524,4 @@ function toggleAssignType() {
 }
 </script>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

@@ -1,9 +1,10 @@
 <?php
 // Generate a simple one-page PDF certificate for a completed project belonging to the logged-in intern
-require 'header.php';
+require __DIR__ . '/includes/header.php';
 
 if (empty($_SESSION['intern_email'])) {
-    header('Location: login.php'); exit;
+    header('Location: login.php'); 
+    exit;
 }
 
 $projectId = $_GET['project_id'] ?? '';
@@ -84,4 +85,4 @@ header('Content-Length: ' . strlen($pdf));
 echo $pdf;
 exit;
 
-require 'footer.php';
+require __DIR__ . '/includes/footer.php';

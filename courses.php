@@ -1,4 +1,4 @@
-<?php require 'header.php';
+<?php require __DIR__ . '/includes/header.php';
 
 // Sample course catalog (would normally come from a DB)
 $courses = [
@@ -61,4 +61,4 @@ input.addEventListener('input', function(){
 });
 </script>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

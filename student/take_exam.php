@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 if (empty($_SESSION['intern_email'])) { header('Location: login.php'); exit; }
 
@@ -227,4 +227,4 @@ history.pushState(null, null, location.href);
 window.onpopstate = () => history.go(1);
 </script>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

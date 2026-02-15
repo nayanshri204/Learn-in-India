@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 // Check admin authentication
 if (empty($_SESSION['admin_id'])) {
@@ -83,7 +83,7 @@ if ($exam_id) {
 ?>
 <div class="card">
     <h1>Exam Results</h1>
-    <p><a href="admin_dashboard.php">← Back to Admin Dashboard</a> | <a href="admin_exams.php">Manage Exams</a></p>
+    <p><a href="../admin/admin_dashboard.php">← Back to Admin Dashboard</a> | <a href="../admin/admin_exams.php">Manage Exams</a></p>
     
     <!-- Exam Filter -->
     <h2>Select Exam</h2>
@@ -165,4 +165,4 @@ if ($exam_id) {
     <?php endif; ?>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

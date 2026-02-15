@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 // Database configuration (should match registration.php)
 $db_host = 'localhost';
@@ -93,4 +93,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </form>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

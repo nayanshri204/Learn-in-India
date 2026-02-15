@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 // Database configuration
 $db_host = 'localhost';
@@ -97,9 +97,9 @@ if (!empty($_SESSION['admin_id'])) {
         </div>
     </form>
     <p style="margin-top: 20px; text-align: center;">
-        <a href="index.php">Back to Home</a>
+        <a href="/Learn-in-India/index.php">Back to Home</a>
     </p>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>
 

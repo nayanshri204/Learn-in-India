@@ -17,8 +17,8 @@ Run the SQL script `database_schema.sql` in your MySQL database (phpMyAdmin or M
 
 ### 2. Default Admin Credentials
 
-- **Email:** `admin@learnindia.com`
-- **Password:** `admin123`
+- **Email:** `<YPUR_EMAIL>`
+- **Password:** `<YOUR_PASSWORD>`
 
 ⚠️ **Security Note:** Change this password immediately after first login!
 

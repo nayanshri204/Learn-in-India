@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 if (empty($_SESSION['intern_email'])) {
     header('Location: login.php');
@@ -114,4 +114,4 @@ if (!$me) {
     <p><a href="dashboard.php">Go to dashboard</a> — <a href="logout.php">Logout</a></p>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

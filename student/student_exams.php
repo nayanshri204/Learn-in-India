@@ -1,5 +1,5 @@
 <?php
-require 'header.php';
+require __DIR__ . '/../includes/header.php';
 
 if (empty($_SESSION['intern_email'])) {
     header('Location: login.php');
@@ -217,4 +217,4 @@ if ($user_id) {
     <?php endif; ?>
 </div>
 
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/../includes/footer.php'; ?>

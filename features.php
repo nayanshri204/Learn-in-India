@@ -1,4 +1,4 @@
-<?php require 'header.php'; ?>
+<?php require __DIR__ . '/includes/header.php'; ?>
 <div class="card">
     <h1>Features</h1>
     <ul>
@@ -8,4 +8,4 @@
         <li>Future-ready: database persistence and email integration</li>
     </ul>
 </div>
-<?php require 'footer.php'; ?>
+<?php require __DIR__ . '/includes/footer.php'; ?>

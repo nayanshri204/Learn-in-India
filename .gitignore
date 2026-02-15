@@ -1,4 +1,4 @@
-# E-Commerce Hub Root .gitignore
+# Learn-In-India Root .gitignore
 
 node_modules/
 data/
@@ -10,3 +10,6 @@ data/
 .idea/
 build/
 dist/
+uploads/certificates/*
+uploads/profile_pictures/*
+!.gitkeep
